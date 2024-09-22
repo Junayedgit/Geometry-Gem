@@ -16,6 +16,6 @@ function rectangleCalculator() {
     // Display
     const rectangleArea = document.getElementById('rectangle-area');
     rectangleArea.innerText = area;
-    console.log(area);
+    console.log('Area of Rectangle', area);
 
 }

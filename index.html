@@ -67,7 +67,7 @@
                             </div>
                             <!-- Display -->
                             <div>
-                                <p class="text-2xlxl">Area: <span id="rectangle-area"></span>
+                                <p class="text-2xlxl">Area: <span id="rectangle-area">0</span>
                                     <span>cm</span><sup>2</sup>
                                 </p>
                             </div>
@@ -80,59 +80,129 @@
                 <!-- Parallelogram -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" class="rounded-xl" />
+                        <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions w-full">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <div>
+                            <div>
+                                <!-- Parallelogram Base -->
+                                <input id="parallelogram-base" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Base">
+                                <span class="mr-2 ml-2">cm</span>
+                                <!-- Parallelogram Height -->
+                                <input id="parallelogram-height" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Height">
+                                <span>cm</span>
+                            </div>
+                            <!-- Display -->
+                            <div>
+                                <p class="text-2xlxl">Area: <span id="parallelogram-area">0</span>
+                                    <span>cm</span><sup>2</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full ">
+                            <button onclick="parallelogramCalculator()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Rhombus -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" class="rounded-xl" />
+                        <img src="images/rectangle.png" alt="rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions w-full">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div>
+                            <div>
+                                <!-- Rectangle Width -->
+                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Width">
+                                <span class="mr-2 ml-2">cm</span>
+                                <!-- Rectangle Lenght -->
+                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Lenght">
+                                <span>cm</span>
+                            </div>
+                            <!-- Display -->
+                            <div>
+                                <p class="text-2xlxl">Area: <span id="rectangle-area">0</span>
+                                    <span>cm</span><sup>2</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full ">
+                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Pentagon -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" class="rounded-xl" />
+                        <img src="images/rectangle.png" alt="rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions w-full">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div>
+                            <div>
+                                <!-- Rectangle Width -->
+                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Width">
+                                <span class="mr-2 ml-2">cm</span>
+                                <!-- Rectangle Lenght -->
+                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Lenght">
+                                <span>cm</span>
+                            </div>
+                            <!-- Display -->
+                            <div>
+                                <p class="text-2xlxl">Area: <span id="rectangle-area">0</span>
+                                    <span>cm</span><sup>2</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full ">
+                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Ellipse -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" class="rounded-xl" />
+                        <img src="images/rectangle.png" alt="rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions w-full">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div>
+                            <div>
+                                <!-- Rectangle Width -->
+                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Width">
+                                <span class="mr-2 ml-2">cm</span>
+                                <!-- Rectangle Lenght -->
+                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Lenght">
+                                <span>cm</span>
+                            </div>
+                            <!-- Display -->
+                            <div>
+                                <p class="text-2xlxl">Area: <span id="rectangle-area">0</span>
+                                    <span>cm</span><sup>2</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full ">
+                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
 
             </div>
             <!--Area Calculation -->
@@ -145,6 +215,7 @@
     </main>
     <script src="Script/triangleCalculate.js"></script>
     <script src="Script/rectangle.js"></script>
+    <script src="Script/parallelogram.js"></script>
 </body>
 
 </html>
