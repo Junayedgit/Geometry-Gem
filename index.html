@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Gem</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- main container -->
+        <div class="flex flex-col md:flex-row">
+            <!--Shaped Card -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- triangle -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <div>
+                            <!-- Triangle Base -->
+                            <input id="triangle-base" class="w-24 text-2xl p-1 rounded-sm" type="text" placeholder="b">
+                            <span class="mr-2 ml-2">cm</span>
+                            <!-- Trangle Height -->
+                            <input id="triangle-height" class="w-24 text-2xl p-1 rounded-sm" type="text"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xlxl">Area: <span id="triangle-area"></span>
+                                <span>cm</span><sup>2</sup>
+                            </p>
+                        </div>
+                        <div class="card-actions w-full ">
+                            <button onclick="triangleCalculate()" class="btn btn-primary w-full ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rectangle -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div>
+                            <div>
+                                <!-- Rectangle Width -->
+                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Width">
+                                <span class="mr-2 ml-2">cm</span>
+                                <!-- Rectangle Lenght -->
+                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="Lenght">
+                                <span>cm</span>
+                            </div>
+                            <!-- Display -->
+                            <div>
+                                <p class="text-2xlxl">Area: <span id=""></span>
+                                    <span>cm</span><sup>2</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full ">
+                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rhombus -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ellipse -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Area Calculation -->
+            <div class="w-96 border-2 border-gray-700 rounded-md">
+                <h3 class="3xl text-center p-4">Area Calculation</h3>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="Script/triangleCalculate.js"></script>
+    <script src="Script/rectangle.js"></script>
+</body>
+
+</html>
