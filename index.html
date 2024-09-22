@@ -112,31 +112,31 @@
                 <!-- Rhombus -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/rectangle.png" alt="rectangle" class="rounded-xl" />
+                        <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rectangle</h2>
-                        <p>Area (A) = w x l</p>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 x d1 x d2</p>
                         <div>
                             <div>
-                                <!-- Rectangle Width -->
-                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="Width">
+                                <!-- Rhombus diagonal-1 -->
+                                <input id="rhombus-diagonal-1" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="d1">
                                 <span class="mr-2 ml-2">cm</span>
-                                <!-- Rectangle Lenght -->
-                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="Lenght">
+                                <!-- Rhombus diagonal-2 -->
+                                <input id="rhombus-diagonal-2" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                    placeholder="d2">
                                 <span>cm</span>
                             </div>
                             <!-- Display -->
                             <div>
-                                <p class="text-2xlxl">Area: <span id="rectangle-area">0</span>
+                                <p class="text-2xlxl">Area: <span id="rhombus-area">0</span>
                                     <span>cm</span><sup>2</sup>
                                 </p>
                             </div>
                         </div>
                         <div class="card-actions w-full ">
-                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="rhombusCalculator()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -216,6 +216,7 @@
     <script src="Script/triangleCalculate.js"></script>
     <script src="Script/rectangle.js"></script>
     <script src="Script/parallelogram.js"></script>
+    <script src="Script/rhombus.js"></script>
 </body>
 
 </html>
