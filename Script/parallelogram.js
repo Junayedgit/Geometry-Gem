@@ -13,8 +13,11 @@ function parallelogramCalculator() {
 
     // Calculation of the Area
     const area = base * height;
-    console.log('Area of the Parallelgram', area);
+
 
     // display
+    const parallelogramArea = document.getElementById('parallelogram-area');
+    parallelogramArea.innerText = area;
+    console.log('Area of the Parallelgram', area);
 
 }
