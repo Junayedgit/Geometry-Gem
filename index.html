@@ -41,10 +41,11 @@
                         <p>Area (A) = 0.5 X b X h</p>
                         <div>
                             <!-- Triangle Base -->
-                            <input id="triangle-base" class="w-24 text-2xl p-1 rounded-sm" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 text-white text-2xl p-1 rounded-sm" type="text"
+                                placeholder="b">
                             <span class="mr-2 ml-2">cm</span>
                             <!-- Trangle Height -->
-                            <input id="triangle-height" class="w-24 text-2xl p-1 rounded-sm" type="text"
+                            <input id="triangle-height" class="w-24 text-white text-2xl p-1 rounded-sm" type="text"
                                 placeholder="h">
                             <span>cm</span>
                         </div>
@@ -69,11 +70,11 @@
                         <div>
                             <div>
                                 <!-- Rectangle Width -->
-                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                <input id="ractangle-width" class="w-24 text-white text-xl p-1 rounded-sm" type="text"
                                     placeholder="Width">
                                 <span class="mr-2 ml-2">cm</span>
                                 <!-- Rectangle Lenght -->
-                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                <input id="rectangle-length" class="w-24 text-white text-xl p-1 rounded-sm" type="text"
                                     placeholder="Lenght">
                                 <span>cm</span>
                             </div>
@@ -100,12 +101,12 @@
                         <div>
                             <div>
                                 <!-- Parallelogram Base -->
-                                <input id="parallelogram-base" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="Base">
+                                <input id="parallelogram-base" class="w-24 text-white text-xl p-1 rounded-sm"
+                                    type="text" placeholder="Base">
                                 <span class="mr-2 ml-2">cm</span>
                                 <!-- Parallelogram Height -->
-                                <input id="parallelogram-height" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="Height">
+                                <input id="parallelogram-height" class="w-24 text-white text-xl p-1 rounded-sm"
+                                    type="text" placeholder="Height">
                                 <span>cm</span>
                             </div>
                             <!-- Display -->
@@ -132,12 +133,12 @@
                         <div>
                             <div>
                                 <!-- Rhombus diagonal-1 -->
-                                <input id="rhombus-diagonal-1" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="d1">
+                                <input id="rhombus-diagonal-1" class="w-24 text-white text-xl p-1 rounded-sm"
+                                    type="text" placeholder="d1">
                                 <span class="mr-2 ml-2">cm</span>
                                 <!-- Rhombus diagonal-2 -->
-                                <input id="rhombus-diagonal-2" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="d2">
+                                <input id="rhombus-diagonal-2" class="w-24 text-white text-xl p-1 rounded-sm"
+                                    type="text" placeholder="d2">
                                 <span>cm</span>
                             </div>
                             <!-- Display -->
@@ -159,27 +160,27 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Pentagon</h2>
-                        <p>Area (A) = w x l</p>
+                        <p>Area (A) = 0.5 x p x b</p>
                         <div>
                             <div>
-                                <!-- Rectangle Width -->
-                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="Width">
+                                <!-- Pentagon Perimeter -->
+                                <input id="pentagon-perimeter" class="w-24 text-white text-xl p-1 rounded-sm"
+                                    type="text" placeholder="P">
                                 <span class="mr-2 ml-2">cm</span>
-                                <!-- Rectangle Lenght -->
-                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
-                                    placeholder="Lenght">
+                                <!-- Pentagon Base -->
+                                <input id="pentagon-base" class="w-24 text-white text-xl p-1 rounded-sm" type="text"
+                                    placeholder="b">
                                 <span>cm</span>
                             </div>
                             <!-- Display -->
                             <div>
-                                <p class="text-2xlxl">Area: <span id="rectangle-area">0</span>
+                                <p class="text-2xlxl">Area: <span id="pentagon-area">0</span>
                                     <span>cm</span><sup>2</sup>
                                 </p>
                             </div>
                         </div>
                         <div class="card-actions w-full ">
-                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="pentagonCalculator()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -190,15 +191,15 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Ellipse</h2>
-                        <p>Area (A) = w x l</p>
+                        <p>Area (A) = πab</p>
                         <div>
                             <div>
                                 <!-- Rectangle Width -->
-                                <input id="ractangle-width" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                <input id="ractangle-width" class="w-24 text-white text-xl p-1 rounded-sm" type="text"
                                     placeholder="Width">
                                 <span class="mr-2 ml-2">cm</span>
                                 <!-- Rectangle Lenght -->
-                                <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm" type="text"
+                                <input id="rectangle-length" class="w-24 text-white text-xl p-1 rounded-sm" type="text"
                                     placeholder="Lenght">
                                 <span>cm</span>
                             </div>
@@ -218,7 +219,8 @@
 
             </div>
             <!--Area Calculation -->
-            <div class="lg:w-96  bg-sky-100 text-black md:w-72 ml-10 mt-2 lg:mt-7 border-2 border-gray-700 rounded-md">
+            <div
+                class="lg:w-96 lg:mr-10  bg-sky-100 text-black md:w-72 ml-10 mt-2 lg:mt-7 border-2 border-gray-700 rounded-md">
                 <h3 class="lg:text-5xl md:text-3xl text-xl text-center p-4">Area Calculation</h3>
 
             </div>
@@ -229,6 +231,7 @@
     <script src="Script/rectangle.js"></script>
     <script src="Script/parallelogram.js"></script>
     <script src="Script/rhombus.js"></script>
+    <script src="Script/Pentagon .js"></script>
 </body>
 
 </html>
